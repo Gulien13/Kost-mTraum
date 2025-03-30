@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unternehmensseite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Allgemeines Styling */
+        header {
+            background-color: #005500; /* Grün */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #ff0000; /* Rot */
+            overflow: hidden;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Hauptinhalt */
+        .main-content {
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #003366; /* Blau */
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background-color: #005500; /* Grün */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #003366; /* Blau */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header-Bereich -->
+    <header>
+        <h1>Willkommen auf der Unternehmensseite</h1>
+        <p>Wir bieten erstklassige Produkte und Dienstleistungen an.</p>
+    </header>
+
+    <!-- Navigationsleiste -->
+    <nav>
+        <a href="#about">Über uns</a>
+        <a href="#products">Produkte</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+    <!-- Hauptinhalt -->
+    <div class="main-content">
+        <!-- Über uns Abschnitt -->
+        <div id="about" class="section">
+            <h2>Über uns</h2>
+            <p>Unser Unternehmen bietet Lösungen, die den Bedürfnissen unserer Kunden entsprechen. Wir sind stolz darauf, qualitativ hochwertige Produkte und exzellenten Service anzubieten.</p>
+        </div>
+
+        <!-- Produkte Abschnitt -->
+        <div id="products" class="section">
+            <h2>Unsere Produkte</h2>
+            <p>Wir bieten eine Vielzahl von Produkten an, die speziell auf die Anforderungen unserer Kunden abgestimmt sind. Schauen Sie sich unsere Auswahl an!</p>
+            <!-- Produktliste -->
+            <ul>
+                <li>Produkt 1</li>
+                <li>Produkt 2</li>
+                <li>Produkt 3</li>
+            </ul>
+        </div>
+
+        <!-- Kontakt Abschnitt -->
+        <div id="contact" class="section">
+            <h2>Kontakt</h2>
+            <p>Haben Sie Fragen? Kontaktieren Sie uns einfach über das untenstehende Formular.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Ihr Name" required>
+                <input type="email" placeholder="Ihre E-Mail" required>
+                <textarea placeholder="Ihre Nachricht" rows="4" required></textarea>
+                <button type="submit">Absenden</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
